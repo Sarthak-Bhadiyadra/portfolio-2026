@@ -1,0 +1,82 @@
+{
+  "personalInfo": {
+    "name": "Sarthak Bhadiyadra",
+    "careerStartDate": "2022-07-01",
+    "title": "Software Engineer",
+    "description": "I’m a Full Stack Developer specializing in the MERN stack, creating sleek frontends with ReactJS and NextJS, and powerful backends using NodeJS and ExpressJS. With experience in CI/CD, AWS, and serverless architectures, I’m all about building fast, scalable, and efficient applications.",
+    "email": "bhadiyadrasarthak2002@gmail.com",
+    "location": "Ahmedabad, Gujarat",
+    "socialLinks": {
+      "linkedin": "https://www.linkedin.com/in/sarthakbhadiyadra/",
+      "github": "https://github.com/Sarthak-Bhadiyadra"
+    }
+  },
+  "skills": {
+    "frontend": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "ReactJS",
+      "NextJS"
+    ],
+    "backend": ["NodeJS", "ExpressJS"],
+    "database": ["MySQL", "PostgreSQL", "MongoDB"],
+    "crm": ["HubSpot", "Salesforce"],
+    "cloud": [
+      "AWS Lambda",
+      "SQS",
+      "API Gateway",
+      "EC2",
+      "Serverless Architecture"
+    ],
+    "tools": ["Supabase", "Git"]
+  },
+  "experience": [
+    {
+      "title": "Full stack Developer",
+      "company": "Esparkbiz Pvt. Ltd.",
+      "duration": "July 2023 - Present",
+      "description": "I joined this firm as a Full Stack Developer and have worked on more than six live projects across various technologies such as ReactJS, NextJS, NodeJS, ExpressJS, HubSpot CRM, NMI payment integration, and cloud technologies including Serverless Architecture, CodePipeline, AWS Lambda, AWS EC2, AWS CloudWatch, AWS CloudFront, AWS CloudStack, AWS S3, and more."
+    },
+    {
+      "title": "Full stack Developer",
+      "company": "Intuz Solutions Pvt. Ltd.",
+      "duration": "July 2022 - June 2023",
+      "description": "I joined this firm as a Full Stack Developer, where I developed backend APIs for the Water Quality Management project using Node.js. I also contributed to the Intuitions project as a backend developer, integrating AWS Lambda for real-time sensor data handling. My work involved using Node.js, React.js, AWS Lambda, and AWS IoT Core."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Izzy - CRM Migration Tool",
+      "description": "Led development of CRM data migration tool to HubSpot, managing various node scripts for webhook integration and data management. Successfully implemented projects like Avidly now membership and Process Rule Extension.",
+      "technologies": [
+        "NodeJS",
+        "ExpressJS",
+        "TypeScript",
+        "HubSpot CRM",
+        "AWS Lambda",
+        "AWS SQS",
+        "AWS API Gateway"
+      ]
+    },
+    {
+      "title": "Dyshez - Food Delivery Platform",
+      "description": "Developed a comprehensive food delivery platform with social media-like features, allowing users to interact with dishes, follow others, and upload images. Implemented standard food delivery functionalities.",
+      "technologies": ["NextJS", "Supabase", "Algolia"],
+      "link": "https://dyshez.com"
+    },
+    {
+      "title": "IntuIons-EV - EV Management System",
+      "description": "Developed centralized EV management portal for real-time data collection and analysis from electric vehicles. Implemented sensor data collection at one-second intervals using AWS services.",
+      "technologies": [
+        "NodeJS",
+        "ReactJS",
+        "ExpressJS",
+        "AWS Lambda",
+        "AWS IOT Core"
+      ],
+      "link": "https://intuions-ev.com"
+    }
+  ]
+}
