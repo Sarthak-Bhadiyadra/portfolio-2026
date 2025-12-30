@@ -1,9 +1,10 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../lib/data';
 import { Shield, Box, Zap, MessageSquare } from 'lucide-react';
+import { useParams, usePathname } from 'next/navigation';
 
 const Navbar = () => {
     useEffect(() => {
@@ -18,6 +19,25 @@ const Navbar = () => {
         { name: 'Projects', href: '#projects', icon: <Box size={14} /> },
         { name: 'Contact', href: '#contact', icon: <MessageSquare size={14} /> },
     ];
+    const [activeSection, setActiveSection] = useState("");
+
+    useEffect(() => {
+        if (typeof window === "undefined") return;
+
+        const updateHash = () => {
+            setActiveSection(window.location.hash || "");
+        };
+
+        // Set initial value
+        updateHash();
+
+        // Listen for hash changes
+        window.addEventListener("hashchange", updateHash);
+
+        return () => {
+            window.removeEventListener("hashchange", updateHash);
+        };
+    }, []);
 
     return (
         <nav className="fixed top-8 left-0 w-full z-50 px-6 pointer-events-none">
@@ -45,9 +65,9 @@ const Navbar = () => {
                         <a
                             key={link.name}
                             href={link.href}
-                            className="flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-secondary transition-all group"
+                            className={`flex items-center gap-2 text-[10px] font-bold uppercase tracking-widest text-white/40 hover:text-secondary transition-all group ${activeSection === link.href ? '!text-secondary' : ''}`}
                         >
-                            <span className="text-white/20 group-hover:text-secondary glow-lime transition-colors">
+                            <span className={`text-white/20 group-hover:text-secondary glow-lime transition-colors ${activeSection === link.href ? '!text-secondary' : ''}`}>
                                 {link.icon}
                             </span>
                             <span className="hidden md:block">{link.name}</span>

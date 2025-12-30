@@ -19,7 +19,7 @@ const Hero = () => {
     const expYears = calculateExperience(careerStartDate);
 
     return (
-        <section id="home" className="min-h-screen relative flex items-center justify-center pt-20 overflow-hidden bg-background">
+        <section id="home" className="min-h-screen relative flex items-center justify-center pt-24 overflow-hidden bg-background">
             {/* Background elements */}
             <div className="light-leak top-[-10%] left-[-10%] w-[600px] h-[600px] bg-primary/20" />
             <div className="light-leak bottom-[-10%] right-[-10%] w-[800px] h-[800px] bg-secondary/10" />
