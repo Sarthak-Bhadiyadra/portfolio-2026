@@ -6,7 +6,7 @@ import { Shield } from 'lucide-react';
 
 const Experience = () => {
     return (
-        <section id="experience" className="py-60 bg-background relative overflow-hidden">
+        <section id="experience" className=" bg-background relative overflow-hidden">
              {/* Background glow leaks */}
             <div className="light-leak top-0 left-[-10%] w-[800px] h-[800px] bg-primary/5" />
             <div className="light-leak bottom-0 right-[-10%] w-[600px] h-[600px] bg-secondary/5" />

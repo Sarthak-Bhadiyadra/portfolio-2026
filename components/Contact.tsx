@@ -34,15 +34,15 @@ const Contact = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             className="flex flex-col gap-8"
                         >
-                            <div className="px-3 py-1 glass-hud rounded-md flex items-center gap-2 max-w-fit">
+                            <div className="px-3 py-1 glass-hud rounded-md flex items-center gap-1 max-w-fit">
                                 <Zap size={14} className="text-secondary glow-lime" />
                                 <span className="hud-label !text-secondary">UPLINK_HUB</span>
                             </div>
 
                             <h2 className="text-4xl sm:text-6xl md:text-8xl lg:text-9xl text-white leading-tight">
-                                Let&apos;s
-                                <span className="block sm:inline"><br /></span>
-                                <span className="text-primary glow-violet italic">Connect.</span>
+                                Let&apos;s {"  "}{"  "}
+                                {/* <span className="block sm:inline"><br /></span> */}
+                                <span className="text-primary glow-violet italic">{"  "}Connect.</span>
                             </h2>
 
                             <p className="text-base sm:text-lg md:text-xl text-white/40 leading-relaxed max-w-full sm:max-w-md">

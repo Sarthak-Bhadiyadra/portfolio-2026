@@ -17,7 +17,7 @@ const Skills = () => {
     return (
         <section id="skills" className="py-40 bg-background relative overflow-hidden">
              {/* Background glow leas */}
-            <div className="light-leak top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10" />
+            <div className="light-leak  left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-secondary/10" />
 
             <div className="max-w-7xl mx-auto px-6">
                 
